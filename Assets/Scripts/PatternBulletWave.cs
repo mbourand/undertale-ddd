@@ -50,8 +50,8 @@ public class PatternBulletWave : MonoBehaviour
 
     private void OnDestroy()
     {
+        Turn.NextTurn();
         GameObject arena = GameObject.Find("Arena");
-        arena.GetComponent<ArenaTransition>().ResetSize("ui_text_1");
+        arena.GetComponent<ArenaTransition>().ResetSize();
     }
-
 }

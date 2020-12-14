@@ -13,7 +13,6 @@ public class AttackCursor : MonoBehaviour
 
     public AttackSlash attackSlash;
 
-    // Start is called before the first frame update
     void Start()
     {
         this.stopMove = false;
@@ -36,7 +35,6 @@ public class AttackCursor : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (!this.stopMove)

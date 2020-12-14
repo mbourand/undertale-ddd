@@ -43,7 +43,7 @@ public class EnemyHealthbar : MonoBehaviour
     IEnumerator DestroySelf()
     {
         yield return new WaitForSeconds(0.8f);
-        GameObject.Find("Pattern Manager").GetComponent<PatternManager>().StartPattern(0);
+        GameObject.Find("Pattern Manager").GetComponent<PatternManager>().StartPattern(Turn.GetTurn().GetPattern());
         Destroy(attackObject);
         Destroy(gameObject.transform.parent.gameObject);
         Destroy(GameObject.FindWithTag("Attack Bar"));

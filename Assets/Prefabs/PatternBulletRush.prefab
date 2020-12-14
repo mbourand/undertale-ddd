@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7621789188067008695
+--- !u!1 &1015298546387549277
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6847790886846309941}
-  - component: {fileID: 4701197047147475331}
+  - component: {fileID: 7025893539969213971}
+  - component: {fileID: 1240478257679041160}
   m_Layer: 0
-  m_Name: PatternManager
+  m_Name: PatternBulletRush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6847790886846309941
+--- !u!4 &7025893539969213971
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7621789188067008695}
+  m_GameObject: {fileID: 1015298546387549277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9940952, y: -1.0529927, z: -36.41652}
+  m_LocalPosition: {x: -0.04522777, y: -1.5673871, z: -465.0537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4701197047147475331
+--- !u!114 &1240478257679041160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7621789188067008695}
+  m_GameObject: {fileID: 1015298546387549277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42adcd8ed3b8daa4f824cc06b78a7fad, type: 3}
+  m_Script: {fileID: 11500000, guid: d1de72034b41f004bac3de8c97f8ba7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arenaTransition: {fileID: 0}
-  patterns:
-  - pattern: {fileID: 2573119364748565525, guid: 56585763ae30a0340969a3a1c29f296a, type: 3}
-    arenaTransitionSize: {x: 0.375, y: 1.5}
-  canStartPattern: 0
+  spinningThenRushBullet: {fileID: 6786166409622396042, guid: 160fa647f0181a541b8238fb92f8aaef, type: 3}
+  linearBullet: {fileID: 0}

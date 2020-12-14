@@ -11,6 +11,7 @@ public class MenuManager : MonoBehaviour
 
     public AudioSource soundSelect;
     public AudioSource soundPressed;
+    public GameObject player;
 
     IEnumerator LateStart()
     {
@@ -50,6 +51,7 @@ public class MenuManager : MonoBehaviour
             SetButtonPressed(selected, false);
             return;
         }
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
             SelectButton((selected + 1) % buttons.Length);
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -58,6 +60,11 @@ public class MenuManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) && !this.pressed)
             SetButtonPressed(selected, true);
         if (Input.GetKeyDown(KeyCode.X) && this.pressed)
+        {
+            player.transform.position = new Vector3(buttons[this.selected].transform.position.x - 0.95f, buttons[this.selected].transform.position.y, player.transform.position.z);
             SetButtonPressed(selected, false);
+        }
+        if (!this.pressed)
+            player.transform.position = new Vector3(buttons[this.selected].transform.position.x - 0.95f, buttons[this.selected].transform.position.y, player.transform.position.z);
     }
 }

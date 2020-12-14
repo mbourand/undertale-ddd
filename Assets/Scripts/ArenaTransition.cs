@@ -5,16 +5,14 @@ using UnityEngine;
 public class ArenaTransition : MonoBehaviour
 {
     private Vector3 leftScale, topScale, rightScale, bottomScale;
-    public GameObject left, top, right, bottom, background;
+    public GameObject left, top, right, bottom, background, player;
     private PatternManager patternManager;
     private DialogManager dialogManager;
-    public string dialogId;
     private float speedLeft, speedRight, speedTop, speedBottom;
     private bool start = false;
     private int frame = 0, time = 45;
     private bool startPattern = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         this.patternManager = GameObject.Find("Pattern Manager").GetComponent<PatternManager>();
@@ -24,18 +22,22 @@ public class ArenaTransition : MonoBehaviour
         bottomScale = bottom.transform.localScale;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (frame == time)
         {
             start = false;
             if (startPattern)
+            {
+                player.transform.position = new Vector3(background.transform.position.x, background.transform.position.y, player.transform.position.z);
                 patternManager.canStartPattern = true;
+                player.GetComponent<SpriteRenderer>().enabled = true;
+            }
             else
             {
-                GameObject.Find("Dialog Manager").GetComponent<DialogManager>().RunDialog(dialogId);
+                GameObject.Find("Dialog Manager").GetComponent<DialogManager>().RunDialog(Turn.GetTurn().GetDialog());
                 GameState.state = GameStateEnum.MENU;
+                player.GetComponent<SpriteRenderer>().enabled = true;
             }
             frame = 0;
         }
@@ -59,6 +61,7 @@ public class ArenaTransition : MonoBehaviour
 
     public void GoTo(float sizeX, float sizeY)
     {
+        player.GetComponent<SpriteRenderer>().enabled = false;
         speedTop = (topScale.x * sizeX - top.transform.localScale.x) / (float)(time);
         speedBottom = (bottomScale.x * sizeX - bottom.transform.localScale.x) / (float)(time);
         speedLeft = (leftScale.y * sizeY - left.transform.localScale.y) / (float)(time);
@@ -68,10 +71,10 @@ public class ArenaTransition : MonoBehaviour
         frame = 0;
     }
 
-    public void ResetSize(string dialogId)
+    public void ResetSize()
     {
         GoTo(1, 1);
+        player.GetComponent<SpriteRenderer>().enabled = false;
         startPattern = false;
-        this.dialogId = dialogId;
     }
 }

@@ -16,6 +16,9 @@ public class FightButton : MenuButton
 
     public AttackSlash attackSlash;
 
+    public GameObject player;
+    public GameObject choice1;
+
     private string dialogId;
     private bool firstFrame = true;
 
@@ -24,6 +27,7 @@ public class FightButton : MenuButton
         if (GameState.state != GameStateEnum.MENU)
             return;
         base.OnPressed();
+        player.transform.position = new Vector3(choice1.transform.GetChild(0).position.x, choice1.transform.GetChild(0).position.y, player.transform.position.z);
         this.dialogId = dialogManager.GetDialogOnTextBox(ref textBox);
         dialogManager.DeleteDialog(this.dialogId);
         dialogManager.RunDialog("fight_choice_1");
@@ -59,6 +63,7 @@ public class FightButton : MenuButton
             AttackCursor cursor = attack.GetComponentInChildren<AttackCursor>() as AttackCursor;
             cursor.attackSound = attackSound;
             cursor.attackSlash = this.attackSlash;
+            player.GetComponent<SpriteRenderer>().enabled = false;
             GameState.state = GameStateEnum.ATTACK;
         }
     }
