@@ -9,14 +9,8 @@ public class SimpleBullet : Bullet
         base.damage = 5;
     }
 
-    new void FixedUpdate()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        base.FixedUpdate();
-    }
-
-    new void OnTriggerEnter2D(Collider2D collision)
-    {
-        base.OnTriggerEnter2D(collision);
         if (collision.CompareTag("Player"))
             Destroy(gameObject);
     }

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6786166409622396044}
   - component: {fileID: 3522078829328497766}
   - component: {fileID: 7014848046126929957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet Spinning Then Rush
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5519721036380943357}
   - component: {fileID: 1106743657860998913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

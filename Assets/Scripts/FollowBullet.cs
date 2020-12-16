@@ -18,9 +18,8 @@ public class FollowBullet : Bullet
         target = GameObject.FindGameObjectsWithTag("Player")[0];
     }
 
-    new void FixedUpdate()
+    void FixedUpdate()
     {
-        base.FixedUpdate();
         Vector3 targetPos = target.transform.position;
         float angle = Mathf.Atan2(targetPos.y - transform.position.y, targetPos.x - transform.position.x);
         Vector3 direction = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0);

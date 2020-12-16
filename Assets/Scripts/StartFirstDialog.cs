@@ -9,7 +9,7 @@ public class StartFirstDialog : MonoBehaviour
     IEnumerator LateStart()
     {
         yield return new WaitForEndOfFrame();
-        dialogManager.RunDialog(0);
+        dialogManager.RunDialog(Turn.GetTurn().GetDialog());
         Destroy(gameObject);
     }
 

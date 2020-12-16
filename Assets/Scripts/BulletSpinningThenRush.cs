@@ -27,11 +27,14 @@ public class BulletSpinningThenRush : Bullet
         bulletSpawnWaveSound = GameObject.Find("Bullet Spawn Wave").GetComponent<AudioSource>();
     }
 
-    new void FixedUpdate()
+    void FixedUpdate()
     {
-        base.FixedUpdate();
         if (frame < timeBeforeRushing)
+        {
+            float distX = center.x - transform.position.x, distY = center.y - transform.position.y;
             transform.position = new Vector3(center.x + Mathf.Cos(frame / (float)timeForOneTurn * Mathf.PI + baseAngle) * radius, center.y + Mathf.Sin(frame / (float)timeForOneTurn * Mathf.PI + baseAngle) * radius, transform.position.z);
+            transform.rotation = Quaternion.AngleAxis((Mathf.Atan2(distY, distX) + Mathf.PI / 2.0f) * Mathf.Rad2Deg, Vector3.forward);
+        }
         if (frame > timeBeforeRushing + 30)
         {
             if (float.IsNaN(toCenterCos))
@@ -45,18 +48,19 @@ public class BulletSpinningThenRush : Bullet
             {
                 for (int i = -2; i < 2; i++)
                 {
-                    LinearBullet bullet = Instantiate(linearBullet, transform.position, Quaternion.identity).GetComponent<LinearBullet>();
+                    LinearBullet bullet = Instantiate(linearBullet, transform.position, Quaternion.identity, transform.parent).GetComponent<LinearBullet>();
                     bullet.lifeSpan = 3f;
-                    bullet.moveSpeed = 0.1f;
-                    bullet.angle = toCenterAngle + i * 0.2f;
+                    bullet.moveSpeed = 0.13f;
+                    bullet.angle = toCenterAngle + i * 0.17f;
                     shot = true;
-                    bulletSpawnWaveSound.Play();
-}
+                }
+                bulletSpawnWaveSound.Play();
+                Destroy(gameObject);
             }
             transform.position += new Vector3(toCenterCos * 0.15f, toCenterSin * 0.15f, 0);
         }
         if (frame == timeBeforeRushing + 30 + 200)
-            Destroy(this);
+            Destroy(gameObject);
         frame++;
     }
 }

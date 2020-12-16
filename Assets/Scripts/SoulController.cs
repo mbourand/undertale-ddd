@@ -49,6 +49,8 @@ public class SoulController
             default:
                 break;
         }
+        if (invincibility_time == 0)
+            CheckBulletCollide();
     }
 
     public void takeDamage(int amount)
@@ -74,6 +76,19 @@ public class SoulController
             takeDamage(b.damage);
             invincibility_time = settings.invincibilityTime;
             GameObject.Find("/Sounds/Hurt").GetComponent<AudioSource>().Play();
+        }
+    }
+
+    void CheckBulletCollide()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(obj.transform.position, 0.03f);
+        foreach (Collider2D c in colliders)
+        {
+            if (c.CompareTag("Bullet"))
+            {
+                DamageByBullet(c.gameObject.GetComponent<Bullet>());
+                break;
+            }
         }
     }
 }

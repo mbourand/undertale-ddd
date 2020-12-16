@@ -20,9 +20,8 @@ public class BulletWave : Bullet
         spawnTime = System.DateTime.Now.Millisecond;
     }
 
-    new void FixedUpdate()
+    void FixedUpdate()
     {
-        base.FixedUpdate();
         if (System.DateTime.Now.Millisecond > spawnTime + lifeSpan * 1000)
         {
             Destroy(gameObject);

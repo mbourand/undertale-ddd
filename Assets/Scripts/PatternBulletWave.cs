@@ -39,7 +39,7 @@ public class PatternBulletWave : MonoBehaviour
                 {
                     LinearBullet wave = Instantiate(linearBulletPrefab, new Vector3(0, 2.5f, -5), Quaternion.identity, gameObject.transform).GetComponent<LinearBullet>();
                     wave.angle = baseAngle + (i * 0.1f);
-                    wave.moveSpeed = 0.08f + Mathf.Cos(Mathf.Min(i, -i) * -Mathf.PI / 4.0f) * 0.03f;
+                    wave.moveSpeed = 0.07f + Mathf.Cos(Mathf.Min(i, -i) * -Mathf.PI / 4.0f) * 0.03f;
                     wave.lifeSpan = 4f;
                 }
             }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4106483600257115980}
   - component: {fileID: 2416916998783343912}
   - component: {fileID: 848809242185235421}
-  - component: {fileID: 5000139223541341525}
-  m_Layer: 0
+  - component: {fileID: 7664925905795684124}
+  m_Layer: 8
   m_Name: Linear Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -76,7 +76,8 @@ MonoBehaviour:
   lifeSpan: 0
   moveSpeed: 0
   angle: 0
---- !u!50 &5000139223541341525
+  rb: {fileID: 7664925905795684124}
+--- !u!50 &7664925905795684124
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -84,14 +85,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4736694037643639259}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -107,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2420683028350174515}
   - component: {fileID: 5956815013706808473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

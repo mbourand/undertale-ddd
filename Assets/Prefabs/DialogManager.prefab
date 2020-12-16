@@ -43,12 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b63c17233b5b8418ccc8b5de82d5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogPrefab: {fileID: 1548370692351109608, guid: b1d2988b5f99d5445bd1b4d765480451, type: 3}
   dialogs:
   - text: '* Overseer Toriel bloque le chemin.'
     id: ui_text_1
     timeBetweenCharacters: 1
     textMeshPro: {fileID: 0}
-    sound: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+    sound: {fileID: 0}
     started: 0
     obj: {fileID: 0}
   - text: '* Toriel'
@@ -58,4 +59,10 @@ MonoBehaviour:
     sound: {fileID: 0}
     started: 0
     obj: {fileID: 0}
-  dialogPrefab: {fileID: 1548370692351109608, guid: b1d2988b5f99d5445bd1b4d765480451, type: 3}
+  - text: "* Toriel voit \xE0 travers toi."
+    id: ui_text_2
+    timeBetweenCharacters: 1
+    textMeshPro: {fileID: 0}
+    sound: {fileID: 0}
+    started: 0
+    obj: {fileID: 0}

@@ -5,26 +5,29 @@ using UnityEngine;
 public class LinearBullet : Bullet
 {
     public float lifeSpan;
-    long spawnTime;
     public float moveSpeed;
     public float angle;
+    int frame;
+    public Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Awake()
     {
-        angle = 0.0f;
-        spawnTime = System.DateTime.Now.Millisecond;
+        frame = 0;
+        angle = 0f;
+        moveSpeed = 0f;
+        lifeSpan = 0f;
     }
 
-    // Update is called once per frame
-    new void FixedUpdate()
+    void FixedUpdate()
     {
-        base.FixedUpdate();
-        if (System.DateTime.Now.Millisecond > spawnTime + lifeSpan * 1000)
+        if (frame > lifeSpan * 60)
         {
             Destroy(gameObject);
             return;
         }
-        transform.position += new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0).normalized * moveSpeed;
+        rb.MovePosition(new Vector2(transform.position.x + Mathf.Cos(angle) * moveSpeed, transform.position.y + Mathf.Sin(angle) * moveSpeed));
+        transform.rotation = Quaternion.AngleAxis((angle + Mathf.PI / 2.0f) * Mathf.Rad2Deg, Vector3.forward);
+        frame++;
     }
 }

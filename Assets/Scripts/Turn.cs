@@ -19,11 +19,13 @@ public struct TurnData
 
 public class Turn : MonoBehaviour
 {
-    public static int current_turn = 0;
+    public static int current_turn = 2;
     public static TurnData[] turns =
     {
         new TurnData("ui_text_1", "pattern_wave"),
         new TurnData("ui_text_2", "pattern_bullet_rush"),
+        new TurnData("ui_text_3", "pattern_sinusoidal_bullet_hell"),
+        new TurnData("ui_text_4", "pattern_spin_and_shot"),
         new TurnData("ui_text_1", "random")
     };
 
