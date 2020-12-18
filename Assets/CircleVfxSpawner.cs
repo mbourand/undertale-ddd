@@ -15,9 +15,11 @@ public class CircleVfxSpawner : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (frequency >= 60 && Turn.current_turn >= 2)
+            frequency = 20;
         if (frame >= frequency)
         {
-            Instantiate(circleVfxPrefab, new Vector3(0, 2.35f, 2), Quaternion.identity, gameObject.transform);
+            Instantiate(circleVfxPrefab, new Vector3(0, 2.35f, 1), Quaternion.identity, gameObject.transform);
             frame = 0;
         }
         frame++;

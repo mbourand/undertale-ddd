@@ -81,7 +81,7 @@ public class SoulController
 
     void CheckBulletCollide()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(obj.transform.position, 0.03f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(obj.transform.position, 0.13f);
         foreach (Collider2D c in colliders)
         {
             if (c.CompareTag("Bullet"))
