@@ -8,8 +8,8 @@ public class MenuButton : MonoBehaviour
     public bool selected;
     public bool pressed;
 
-    private bool pressed_once;
-    private bool selected_once;
+    public bool pressed_once;
+    public bool selected_once;
 
     public Sprite spriteNotSelected, spriteSelected;
 

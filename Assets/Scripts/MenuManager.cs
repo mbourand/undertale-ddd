@@ -36,7 +36,7 @@ public class MenuManager : MonoBehaviour
         soundSelect.Play();
     }
 
-    void SetButtonPressed(int idx, bool b)
+    public void SetButtonPressed(int idx, bool b)
     {
         this.pressed = b;
         buttons[idx].pressed = b;
@@ -46,7 +46,7 @@ public class MenuManager : MonoBehaviour
 
     void Update()
     {
-        if (GameState.state != GameStateEnum.MENU)
+        if (GameState.instance.state != GameStateEnum.MENU)
         {
             SetButtonPressed(selected, false);
             return;

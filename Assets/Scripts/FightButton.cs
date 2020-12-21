@@ -24,7 +24,7 @@ public class FightButton : MenuButton
 
     protected override void OnPressed()
     {
-        if (GameState.state != GameStateEnum.MENU)
+        if (GameState.instance.state != GameStateEnum.MENU)
             return;
         base.OnPressed();
         player.transform.position = new Vector3(choice1.transform.GetChild(0).position.x, choice1.transform.GetChild(0).position.y, player.transform.position.z);
@@ -36,7 +36,7 @@ public class FightButton : MenuButton
     protected override void OnDepressed()
     {
         firstFrame = true;
-        if (GameState.state != GameStateEnum.MENU)
+        if (GameState.instance.state != GameStateEnum.MENU)
             return;
         dialogManager.DeleteDialog("fight_choice_1");
         dialogManager.RunDialog(this.dialogId);
@@ -44,14 +44,14 @@ public class FightButton : MenuButton
 
     protected override void OnSelected()
     {
-        if (GameState.state != GameStateEnum.MENU)
+        if (GameState.instance.state != GameStateEnum.MENU)
             return;
         base.OnSelected();
     }
 
     protected override void OnPressedUpdate()
     {
-        if (GameState.state != GameStateEnum.MENU)
+        if (GameState.instance.state != GameStateEnum.MENU)
             return;
         if (firstFrame && !Input.GetKeyDown(KeyCode.Return))
             firstFrame = false;
@@ -64,7 +64,7 @@ public class FightButton : MenuButton
             cursor.attackSound = attackSound;
             cursor.attackSlash = this.attackSlash;
             player.GetComponent<SpriteRenderer>().enabled = false;
-            GameState.state = GameStateEnum.ATTACK;
+            GameState.instance.state = GameStateEnum.ATTACK;
         }
     }
 }

@@ -43,6 +43,7 @@ public class PatternBulletRush : MonoBehaviour
     {
         Turn.NextTurn();
         GameObject arena = GameObject.Find("Arena");
-        arena.GetComponent<ArenaTransition>().ResetSize();
+        if (arena && arena.GetComponent<ArenaTransition>())
+            arena.GetComponent<ArenaTransition>().ResetSize();
     }
 }

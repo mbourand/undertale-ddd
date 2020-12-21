@@ -15,7 +15,7 @@ public class CircleVfxSpawner : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (frequency >= 60 && Turn.current_turn >= 2)
+        if (frequency >= 60 && Turn.instance.current_turn >= 2)
             frequency = 20;
         if (frame >= frequency)
         {

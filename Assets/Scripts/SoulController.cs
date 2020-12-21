@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum SoulState
 {
@@ -30,7 +31,7 @@ public class SoulController
 
     public void RedSoulMovement()
     {
-        if (GameState.state != GameStateEnum.ATTACK)
+        if (GameState.instance.state != GameStateEnum.ATTACK)
             return;
 
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
@@ -74,6 +75,10 @@ public class SoulController
         if (invincibility_time == 0)
         {
             takeDamage(b.damage);
+            if (hp <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
             invincibility_time = settings.invincibilityTime;
             GameObject.Find("/Sounds/Hurt").GetComponent<AudioSource>().Play();
         }

@@ -8,12 +8,13 @@ public class Dialog : MonoBehaviour
 {
     [TextArea(1, 3)]
     public string text;
-    public int timeBetweenCharacters;
+    public float timeBetweenCharacters;
 
-    private int currentTimeBetweenCharacters;
+    private float currentTimeBetweenCharacters;
     private string currentText;
 
-    public bool start = false, finish;
+    public bool start = false;
+    public bool finish;
 
     public TextMeshPro textMeshPro;
     public AudioSource audioSource;
@@ -36,16 +37,20 @@ public class Dialog : MonoBehaviour
             textMeshPro.text = currentText;
             finish = true;
         }
-        else if (currentTimeBetweenCharacters++ >= timeBetweenCharacters)
+        else if ((currentTimeBetweenCharacters += 1.0f) >= timeBetweenCharacters + 1)
         {
             char newChar = text[currentText.Length];
-            currentText += newChar;
+            do
+            {
+                currentText += (newChar == '-' ? ' ' : newChar);
+            } while (currentText.Length != text.Length && (newChar = text[currentText.Length]) == '-');
+
             textMeshPro.text = currentText;
             if (audioSource.clip && char.IsLetterOrDigit(newChar))
                 audioSource.Play();
-            if (currentText == text)
+            if (currentText.Length == text.Length)
                 finish = true;
-            currentTimeBetweenCharacters = 0;
+            currentTimeBetweenCharacters -= timeBetweenCharacters + 1;
         }
     }
     

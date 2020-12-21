@@ -9,7 +9,7 @@ public struct DialogLink
     [TextArea(1, 3)]
     public string text;
     public string id;
-    public int timeBetweenCharacters;
+    public float timeBetweenCharacters;
     public TextMeshPro textMeshPro;
     public AudioSource sound;
     [HideInInspector]
@@ -97,5 +97,13 @@ public class DialogManager : MonoBehaviour
             if (textBox == dialogs[i].textMeshPro && dialogs[i].started)
                 return dialogs[i].id;
         return null;
+    }
+
+    public ref DialogLink GetDialog(string id)
+    {
+        for (int i = 0; i < dialogs.Length; i++)
+            if (dialogs[i].id == id)
+                return ref dialogs[i];
+        return ref dialogs[0];
     }
 }

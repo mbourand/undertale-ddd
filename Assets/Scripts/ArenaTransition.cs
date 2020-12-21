@@ -36,7 +36,7 @@ public class ArenaTransition : MonoBehaviour
             else
             {
                 GameObject.Find("Dialog Manager").GetComponent<DialogManager>().RunDialog(Turn.GetTurn().GetDialog());
-                GameState.state = GameStateEnum.MENU;
+                GameState.instance.state = GameStateEnum.MENU;
                 player.GetComponent<SpriteRenderer>().enabled = true;
             }
             frame = 0;

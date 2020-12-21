@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
             return;
 
         GameObject instance = Instantiate(damageAnimationPrefab);
-        instance.transform.position = new Vector3(-2, 3, -1);
+        instance.transform.position = new Vector3(-2, 3, -2);
         EnemyHealthbar healthBar = instance.GetComponentInChildren<EnemyHealthbar>() as EnemyHealthbar;
         healthBar.maxHp = maxHp;
         healthBar.from = hp;

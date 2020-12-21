@@ -19,22 +19,33 @@ public struct TurnData
 
 public class Turn : MonoBehaviour
 {
-    public static int current_turn = 4;
-    public static TurnData[] turns =
+    public static Turn instance;
+    public int current_turn = 0;
+    public TurnData[] turns =
     {
         new TurnData("ui_text_1", "pattern_wave"),
         new TurnData("ui_text_2", "pattern_bullet_rush"),
         new TurnData("ui_text_3", "pattern_sinusoidal_bullet_hell"),
         new TurnData("ui_text_4", "pattern_spin_and_shot"),
-        new TurnData("ui_text_4", "pattern_truc"),
+        new TurnData("ui_text_5", "pattern_truc"),
+        new TurnData("ui_text_6", "pattern_wave_circle"),
         new TurnData("ui_text_1", "random")
     };
 
-    public static TurnData GetTurn() { return turns[current_turn]; }
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+        current_turn = 5;
+    }
+
+    public static TurnData GetTurn() { return instance.turns[instance.current_turn]; }
     public static void NextTurn()
     {
-        if (current_turn == turns.Length - 1)
+        if (instance.current_turn == instance.turns.Length - 1)
             return;
-        current_turn++;
+        instance.current_turn++;
     }
 }

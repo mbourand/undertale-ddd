@@ -8,7 +8,19 @@ public enum GameStateEnum
     ATTACK
 }
 
-public class GameState
+public class GameState : MonoBehaviour
 {
-    public static GameStateEnum state = GameStateEnum.MENU;
+    public static GameState instance;
+
+    public GameStateEnum state = GameStateEnum.MENU;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+
 }
