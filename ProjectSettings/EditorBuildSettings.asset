@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Before fight.unity
+    guid: 46ebb3ac2c938c745812833cb87deed4
+  - enabled: 1
+    path: Assets/Scenes/Fight Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 420bf474ab5e23547a4778386d91e516, type: 2}

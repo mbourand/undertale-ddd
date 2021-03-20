@@ -33,7 +33,6 @@ public class SoulController
     {
         if (GameState.instance.state != GameStateEnum.ATTACK)
             return;
-
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
         obj.transform.position += dir.normalized * this.settings.moveSpeed * Time.deltaTime;
     }

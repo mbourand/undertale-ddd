@@ -6,7 +6,7 @@ using TMPro;
 [System.Serializable]
 public struct DialogLink
 {
-    [TextArea(1, 3)]
+    [TextArea(1, 4)]
     public string text;
     public string id;
     public float timeBetweenCharacters;

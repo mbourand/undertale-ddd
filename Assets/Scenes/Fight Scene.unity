@@ -645,133 +645,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &181109086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 181109088}
-  - component: {fileID: 181109087}
-  m_Layer: 0
-  m_Name: Music Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &181109087
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181109086}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9d309df5c662fae439ce645bc34d20ca, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &181109088
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181109086}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &198221814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1501441689537425654, guid: 2be5caa76d3889a4990fced8eddde7ae, type: 3}
@@ -936,7 +809,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8fa1094ae5354c141be734d58c756723, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.386
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1241,7 +1114,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8615e9b1a284e4f40a0fb26830568057, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.218
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1584,7 +1457,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.223
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1738,7 +1611,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6a45718bdaa8860429446f5da4fe89d3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.109
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2155,7 +2028,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &939595888
 GameObject:
@@ -2375,6 +2248,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 706594685}
+--- !u!1 &950974067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950974069}
+  - component: {fileID: 950974068}
+  m_Layer: 0
+  m_Name: Game State
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &950974068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950974067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d493ead24a043b44b43495f4d1339ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+--- !u!4 &950974069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950974067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7807058, y: 0.49738604, z: -307.59613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &957812176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5650360250794641221, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
@@ -2573,7 +2490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.19, y: -0.07}
+  m_AnchoredPosition: {x: 8.19, y: 0.07}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1112554057
@@ -2619,7 +2536,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 10bc660a7242ccc49887b5db5d75676b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.218
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2746,7 +2663,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ced41229b85af25418b3ba95ff42c675, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.218
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2947,8 +2864,8 @@ RectTransform:
   m_Children:
   - {fileID: 939595889}
   - {fileID: 1890021853}
-  m_Father: {fileID: 1731831402}
-  m_RootOrder: 6
+  m_Father: {fileID: 1869327534}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3258,7 +3175,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d75d12a596f5808438f76db6b2e63d90, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.223
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3385,7 +3302,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e9a3ad6170c744d438a9642e9ba131f3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.212
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3701,7 +3618,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e9b79bf5e9f691649b34da9fc8f51e8c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.212
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3808,6 +3725,11 @@ MonoBehaviour:
   selected_once: 0
   spriteNotSelected: {fileID: 4057207396537156321, guid: 3bc372bd6c657814790ec0840e45a77c, type: 3}
   spriteSelected: {fileID: -5496038681050978549, guid: 3bc372bd6c657814790ec0840e45a77c, type: 3}
+  dialogManager: {fileID: 739565617}
+  textBox: {fileID: 105259159}
+  pressedSound: {fileID: 1134772272}
+  player: {fileID: 198221814}
+  choice1: {fileID: 756396709}
 --- !u!1 &1530554671
 GameObject:
   m_ObjectHideFlags: 0
@@ -4163,6 +4085,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2be5caa76d3889a4990fced8eddde7ae, type: 3}
+--- !u!1 &1730926098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730926099}
+  - component: {fileID: 1730926100}
+  m_Layer: 0
+  m_Name: Turn Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1730926099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730926098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7807058, y: 0.49738604, z: -307.59613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730926100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730926098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f700cc161acd5408da213313109af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current_turn: 4
 --- !u!1 &1731831401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4197,7 +4163,6 @@ Transform:
   - {fileID: 72042260}
   - {fileID: 1884921838}
   - {fileID: 1869327534}
-  - {fileID: 1212998031}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4262,7 +4227,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 313d4e9ded0ceee468b76cd57ce4a836, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.218
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4589,6 +4554,7 @@ Transform:
   - {fileID: 756396710}
   - {fileID: 1015728306}
   - {fileID: 1541566503}
+  - {fileID: 1212998031}
   m_Father: {fileID: 1731831402}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5187,7 +5153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.size
-      value: 9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[0].textMeshPro
@@ -5204,18 +5170,18 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[2].sound
       value: 
-      objectReference: {fileID: 637290985}
+      objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[3].text
-      value: "* Toriel voit \xE0 travers toi."
+      value: '* Examiner'
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[3].id
-      value: ui_text_2
+      value: act_choice_1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[3].timeBetweenCharacters
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[3].textMeshPro
@@ -5224,34 +5190,34 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[3].sound
       value: 
-      objectReference: {fileID: 637290985}
+      objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[4].text
-      value: "* La pi\xE8ce commence \xE0 se r\xE9chauffer."
+      value: '* Parler'
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[4].id
-      value: ui_text_4
+      value: act_choice_2
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[4].timeBetweenCharacters
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[4].textMeshPro
       value: 
-      objectReference: {fileID: 105259159}
+      objectReference: {fileID: 1853148425}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[4].sound
       value: 
-      objectReference: {fileID: 637290985}
+      objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[5].text
-      value: "* La pi\xE8ce est pleine de poussi\xE8re."
+      value: "* La poussi\xE8re se disperse."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[5].id
-      value: ui_text_6
+      value: ui_text_3
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[5].timeBetweenCharacters
@@ -5267,15 +5233,15 @@ PrefabInstance:
       objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[6].text
-      value: '* Bonbon monstre'
+      value: "* Toriel voit \xE0 travers toi."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[6].id
-      value: item_monster_candy
+      value: ui_text_2
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[6].timeBetweenCharacters
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[6].textMeshPro
@@ -5284,14 +5250,14 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[6].sound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[7].text
-      value: '* De la sueur coule sur ton front.'
+      value: "* La pi\xE8ce commence \xE0 se r\xE9chauffer."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[7].id
-      value: ui_text_5
+      value: ui_text_4
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[7].timeBetweenCharacters
@@ -5307,16 +5273,15 @@ PrefabInstance:
       objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[8].text
-      value: "* Tu manges le Bonbon monstre. \xC7a a un go\xFBt\n-----de r\xE9glisse.\n*
-        Tu r\xE9cup\xE8res 10PV."
+      value: "* La pi\xE8ce est pleine de poussi\xE8re."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[8].id
-      value: item_monster_candy_used
+      value: ui_text_6
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[8].timeBetweenCharacters
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[8].textMeshPro
@@ -5328,15 +5293,15 @@ PrefabInstance:
       objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[9].text
-      value: '* Overseer Toriel bloque le chemin.'
+      value: '* Bonbon monstre'
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[9].id
-      value: ui_text_1
+      value: item_monster_candy
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[9].timeBetweenCharacters
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[9].textMeshPro
@@ -5345,14 +5310,14 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[9].sound
       value: 
-      objectReference: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[10].text
-      value: '* Overseer Toriel bloque le chemin.'
+      value: '* De la sueur coule sur ton front.'
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[10].id
-      value: ui_text_1
+      value: ui_text_5
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[10].timeBetweenCharacters
@@ -5365,18 +5330,19 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[10].sound
       value: 
-      objectReference: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+      objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[11].text
-      value: '* Overseer Toriel bloque le chemin.'
+      value: "* Tu manges le Bonbon monstre. \xC7a a un go\xFBt\n-----de r\xE9glisse.\n*
+        Tu r\xE9cup\xE8res 10PV."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[11].id
-      value: ui_text_1
+      value: item_monster_candy_used
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[11].timeBetweenCharacters
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[11].textMeshPro
@@ -5385,18 +5351,19 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[11].sound
       value: 
-      objectReference: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+      objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[12].text
-      value: '* Overseer Toriel bloque le chemin.'
+      value: "* Apr\xE8s tous les crimes que tu as commis,\n----toriel ne semble
+        pas pr\xEAte \xE0 t'\xE9pargner."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[12].id
-      value: ui_text_1
+      value: spare_text_1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[12].timeBetweenCharacters
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[12].textMeshPro
@@ -5405,18 +5372,21 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[12].sound
       value: 
-      objectReference: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+      objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[13].text
-      value: '* Overseer Toriel bloque le chemin.'
+      value: '* TORIEL OVERSEER : 90 ATK 90 DEF
+
+        * Ton premier obstacle parmi
+        d''autres.'
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[13].id
-      value: ui_text_1
+      value: check_text_1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[13].timeBetweenCharacters
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[13].textMeshPro
@@ -5425,18 +5395,19 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[13].sound
       value: 
-      objectReference: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+      objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[14].text
-      value: '* Overseer Toriel bloque le chemin.'
+      value: "* Tu dis \xE0 Toriel qu'elle reverra bient\xF4t\n----les monstres des
+        ruines.\n* Elle ne r\xE9agit pas."
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[14].id
-      value: ui_text_1
+      value: talk_text_1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[14].timeBetweenCharacters
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[14].textMeshPro
@@ -5445,7 +5416,7 @@ PrefabInstance:
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[14].sound
       value: 
-      objectReference: {fileID: 8300000, guid: e04e9a30f1bf1294a8e4a8aa083f3353, type: 3}
+      objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[15].text
       value: '* Overseer Toriel bloque le chemin.'
@@ -5552,11 +5523,19 @@ PrefabInstance:
       objectReference: {fileID: 637290985}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[2].id
-      value: ui_text_3
+      value: mercy_choice_1
       objectReference: {fileID: 0}
     - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: dialogs.Array.data[2].text
-      value: "* La poussi\xE8re se disperse."
+      value: '* Epargner'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
+      propertyPath: dialogs.Array.data[2].timeBetweenCharacters
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003445634750164950, guid: 01cb816993cc6e64791408c076c98168, type: 3}
+      propertyPath: dialogs.Array.data[0].text
+      value: '* Toriel Overseer bloque le chemin.'
       objectReference: {fileID: 0}
     - target: {fileID: 3241786896932407408, guid: 01cb816993cc6e64791408c076c98168, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5688,6 +5667,34 @@ PrefabInstance:
       propertyPath: spriteSelected
       value: 
       objectReference: {fileID: 5967464863058100175, guid: dc7d49b936ec4bd4c9e1454d88dccc2e, type: 3}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 739565617}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 105259159}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: pressedSound
+      value: 
+      objectReference: {fileID: 1134772272}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 198221814}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: choice1
+      value: 
+      objectReference: {fileID: 756396709}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: choice2
+      value: 
+      objectReference: {fileID: 1015728305}
+    - target: {fileID: -1670103123464943516, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
+      propertyPath: selectedSound
+      value: 
+      objectReference: {fileID: 263467905}
     - target: {fileID: 2643081630341680984, guid: e7217d22383caa94098fb0cdad2a5fac, type: 3}
       propertyPath: m_Name
       value: Act Button
@@ -6013,6 +6020,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6123543003949050875, guid: b3df0e1c170438c43b1799a106d53865, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123543003949050875, guid: b3df0e1c170438c43b1799a106d53865, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3df0e1c170438c43b1799a106d53865, type: 3}
 --- !u!1001 &7398761131926901920
@@ -6024,7 +6039,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
       propertyPath: patterns.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
       propertyPath: arenaTransition
@@ -6080,7 +6095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
       propertyPath: patterns.Array.data[3].arenaTransitionSize.y
-      value: 1.464
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
       propertyPath: patterns.Array.data[4].id
@@ -6112,6 +6127,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
       propertyPath: patterns.Array.data[5].arenaTransitionSize.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
+      propertyPath: patterns.Array.data[6].id
+      value: pattern_bullet_rush_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
+      propertyPath: patterns.Array.data[6].pattern
+      value: 
+      objectReference: {fileID: 3201419320635343032, guid: 1ee95e095fa7bc245a213915ebac60b1, type: 3}
+    - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
+      propertyPath: patterns.Array.data[6].arenaTransitionSize.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701197047147475331, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}
+      propertyPath: patterns.Array.data[6].arenaTransitionSize.y
       value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 6847790886846309941, guid: aed0831d8917faf488a10f589c3e2d97, type: 3}

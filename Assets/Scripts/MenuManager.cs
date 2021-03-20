@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
     public AudioSource soundSelect;
     public AudioSource soundPressed;
     public GameObject player;
+    bool axisPressed = false;
 
     IEnumerator LateStart()
     {
@@ -52,14 +53,28 @@ public class MenuManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-            SelectButton((selected + 1) % buttons.Length);
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            SelectButton((selected == 0 ? buttons.Length : selected) - 1);
+        if (Input.GetAxis("Menu Horizontal") == 1)
+        {
+            if (!axisPressed)
+            {
+                SelectButton((selected + 1) % buttons.Length);
+                axisPressed = true;
+            }
+        }
+        else if (Input.GetAxis("Menu Horizontal") == -1)
+        {
+            if (!axisPressed)
+            {
+                SelectButton((selected == 0 ? buttons.Length : selected) - 1);
+                axisPressed = true;
+            }
+        }
+        else
+            axisPressed = false;
 
-        if (Input.GetKeyDown(KeyCode.Return) && !this.pressed)
+        if (Input.GetButtonDown("Confirm") && !this.pressed)
             SetButtonPressed(selected, true);
-        if (Input.GetKeyDown(KeyCode.X) && this.pressed)
+        if (Input.GetButtonDown("Cancel") && this.pressed)
         {
             player.transform.position = new Vector3(buttons[this.selected].transform.position.x - 0.95f, buttons[this.selected].transform.position.y, player.transform.position.z);
             SetButtonPressed(selected, false);

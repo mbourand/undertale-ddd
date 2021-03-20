@@ -46,11 +46,18 @@ public class BulletCircleAndShot : MonoBehaviour
             offset = Random.Range(-0.4f, 0.4f);
             bufferAngle = offset;
             frameSinceGoToReached = 0;
-            angle += 0.05f * (angle < goToAngle ? 1 : -1);
+            if (angle < Mathf.PI / 2f && goToAngle > Mathf.PI * 6 / 4f)
+                angle -= 0.5f;
+            else if (angle > Mathf.PI * 6 / 4f && goToAngle < Mathf.PI / 2f)
+                angle += 0.5f;
+            else
+                angle += 0.05f * (angle < goToAngle ? 1 : -1);
+            while (angle < 0)
+                angle += Mathf.PI * 2;
         }
         else
         {
-            if (frameSinceGoToReached > 20)
+            if (frameSinceGoToReached > 25)
             {
                 for (; bufferAngle < (Mathf.PI * 2 + offset) / 5f * ((frame % 5) + 1); bufferAngle += Mathf.PI * 2 / 16f)
                 {
@@ -78,9 +85,9 @@ public class BulletCircleAndShot : MonoBehaviour
                 for (float angle = offset; angle < Mathf.PI * 2; angle += Mathf.PI * 2 / 16f)
                 {
                     GameObject lazerInstance = Instantiate(lazer, transform.GetChild(0).position, Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward), transform.parent);
-                    Destroy(lazerInstance, 2 / 5f);
+                    Destroy(lazerInstance, 25 / 50f);
                     lazerInstance = Instantiate(lazer, transform.GetChild(1).position, Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward), transform.parent);
-                    Destroy(lazerInstance, 2 / 5f);
+                    Destroy(lazerInstance, 25 / 50f);
                 }
             }
             frameSinceGoToReached++;

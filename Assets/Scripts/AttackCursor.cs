@@ -23,7 +23,7 @@ public class AttackCursor : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && !this.stopMove)
+        if (Input.GetButtonDown("Confirm") && !this.stopMove)
         {
             this.stopMove = true;
             this.animator.SetBool("Enter Pressed", true);

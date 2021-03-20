@@ -31,7 +31,7 @@ public class PatternWaveCircle : MonoBehaviour
 
         if (frame > 100 && frame < 1000)
         {
-            float time = 15;
+            float time = 17;
             for (; angle < (Mathf.PI * 2 + offset) / time * ((frame % time) + 1); angle += Mathf.PI * 2 / 8f, angle2 -= Mathf.PI * 2 / 8f)
             {
                 for (int i = 0; i < 2; i++)

@@ -29,6 +29,7 @@ public class Turn : MonoBehaviour
         new TurnData("ui_text_4", "pattern_spin_and_shot"),
         new TurnData("ui_text_5", "pattern_truc"),
         new TurnData("ui_text_6", "pattern_wave_circle"),
+        new TurnData("ui_text_6", "pattern_bullet_rush_2"),
         new TurnData("ui_text_1", "random")
     };
 
@@ -38,7 +39,6 @@ public class Turn : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
-        current_turn = 5;
     }
 
     public static TurnData GetTurn() { return instance.turns[instance.current_turn]; }

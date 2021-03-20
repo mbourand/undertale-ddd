@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sinusoidalBullet: {fileID: 650227278463890299, guid: a7d23ce4b0679e74189ba0948affbec0, type: 3}
-  linearBullet: {fileID: 4736694037643639259, guid: 38811fa226351df41b9e173555e087d0, type: 3}
+  linearBullet: {fileID: 964281222644786028, guid: 77d1acadbde582a4d98510e75f829f4b, type: 3}

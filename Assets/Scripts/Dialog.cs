@@ -46,7 +46,7 @@ public class Dialog : MonoBehaviour
             } while (currentText.Length != text.Length && (newChar = text[currentText.Length]) == '-');
 
             textMeshPro.text = currentText;
-            if (audioSource.clip && char.IsLetterOrDigit(newChar))
+            if (audioSource != null && char.IsLetterOrDigit(newChar))
                 audioSource.Play();
             if (currentText.Length == text.Length)
                 finish = true;

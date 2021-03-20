@@ -53,9 +53,9 @@ public class FightButton : MenuButton
     {
         if (GameState.instance.state != GameStateEnum.MENU)
             return;
-        if (firstFrame && !Input.GetKeyDown(KeyCode.Return))
+        if (firstFrame && !Input.GetButtonDown("Confirm"))
             firstFrame = false;
-        if (!firstFrame && Input.GetKeyDown(KeyCode.Return))
+        if (!firstFrame && Input.GetButtonDown("Confirm"))
         {
             pressedSound.Play();
             dialogManager.DeleteDialog("fight_choice_1");

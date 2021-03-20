@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Eye
+    uniqueID: 1650626567
+    locked: 0

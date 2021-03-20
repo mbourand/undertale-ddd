@@ -52,7 +52,7 @@ public class ItemButton : MenuButton
             return;
         }
         base.OnPressedUpdate();
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetButtonDown("Confirm"))
         {
             player.Heal(player.items[selectedChoice].heal);
             DestroyChoices();

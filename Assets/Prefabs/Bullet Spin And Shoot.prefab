@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b680c91cc7ba9e43bb05636f80ee9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 6
   linearBulletDieAtPoint: {fileID: 1383479801167062848, guid: 4f025eb02583c054680c74e49a492eeb, type: 3}
   linearBullet: {fileID: 4736694037643639259, guid: 38811fa226351df41b9e173555e087d0, type: 3}
   lifeSpan: 20
