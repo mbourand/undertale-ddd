@@ -23,12 +23,12 @@ public class AttackCursor : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Confirm") && !this.stopMove)
+        if ((Input.GetButtonDown("Confirm") || ((dir == -1 && gameObject.transform.parent.position.x - transform.position.x < -7.8f) || (dir == 1 && gameObject.transform.parent.position.x - transform.position.x > 7.8f))) && !this.stopMove)
         {
             this.stopMove = true;
             this.animator.SetBool("Enter Pressed", true);
             int minDamage = 600, maxDamage = 1150;
-            float distance = (gameObject.transform.parent.position.x - transform.position.x) / 2;
+            float distance = (gameObject.transform.parent.position.x - transform.position.x) / 2f;
             attackSlash.damage = Mathf.RoundToInt((maxDamage - minDamage) * Mathf.Exp(-distance * distance) + minDamage);
             attackSlash.StartAnimation();
             attackSound.Play();

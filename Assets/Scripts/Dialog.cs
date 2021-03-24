@@ -47,7 +47,7 @@ public class Dialog : MonoBehaviour
 
             textMeshPro.text = currentText;
             if (audioSource != null && char.IsLetterOrDigit(newChar))
-                audioSource.Play();
+                audioSource.PlayOneShot(audioSource.clip, 1);
             if (currentText.Length == text.Length)
                 finish = true;
             currentTimeBetweenCharacters -= timeBetweenCharacters + 1;

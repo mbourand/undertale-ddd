@@ -7,6 +7,7 @@ public class PatternTruc : MonoBehaviour
     int frame;
     public GameObject bulletCircleAndShot;
     BulletCircleAndShot bullet;
+    int last_r;
 
     void Awake()
     {
@@ -33,7 +34,13 @@ public class PatternTruc : MonoBehaviour
 
     float ChooseAngle()
     {
-        int r = Random.Range(0, 4);
+        int r;
+        do
+        {
+            r = Random.Range(0, 4);
+        } while (last_r == r);
+        last_r = r;
+
         switch (r)
         {
             case 0:

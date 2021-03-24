@@ -23,7 +23,7 @@ public class EyeAnimation : MonoBehaviour
             return;
         if (frame < time)
         {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + (1 / time), transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + (1.08f / time), transform.localScale.z);
             frame++;
         }
         if (frame == time)

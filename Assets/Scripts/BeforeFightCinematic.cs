@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class BeforeFightCinematic : MonoBehaviour
 {
-    int currentDialog = 0;
+    int currentDialog = 11;
     public DialogManager dialogManager;
     public GameObject dustParticles;
     public AudioSource rumble;
     public EyeAnimation eye;
     public CameraShake cameraShake;
+    public CircleTransition circleTransition;
 
     string[] dialogs =
     {
@@ -61,6 +62,7 @@ public class BeforeFightCinematic : MonoBehaviour
             StartCoroutine(cameraShake.Shake(13f, .05f));
             GameObject.Find("Fight Music Player").GetComponent<AudioSource>().Play();
             StartCoroutine("LoadFightScene");
+            StartCoroutine("StartTransition");
         }
     }
 
@@ -68,6 +70,12 @@ public class BeforeFightCinematic : MonoBehaviour
     {
         yield return new WaitForSeconds(12.9f);
         SceneManager.LoadScene("Fight Scene");
+    }
+
+    IEnumerator StartTransition()
+    {
+        yield return new WaitForSeconds(9.3f);
+        circleTransition.start = true;
     }
 
     IEnumerator StartEye()

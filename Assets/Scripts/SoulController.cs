@@ -76,7 +76,9 @@ public class SoulController
             takeDamage(b.damage);
             if (hp <= 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                GameObject.Find("Fight Music Player").GetComponent<AudioSource>().Stop();
+                SceneManager.LoadScene("Game Over");
+                return;
             }
             invincibility_time = settings.invincibilityTime;
             GameObject.Find("/Sounds/Hurt").GetComponent<AudioSource>().Play();
