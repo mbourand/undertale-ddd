@@ -18,7 +18,6 @@ public class PlayerManager : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
         soulController = new SoulController(ref settings, GetComponent<Rigidbody2D>(), gameObject);
     }
 

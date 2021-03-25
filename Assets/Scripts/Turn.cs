@@ -29,7 +29,8 @@ public class Turn : MonoBehaviour
         new TurnData("ui_text_4", "pattern_spin_and_shot"),
         new TurnData("ui_text_5", "pattern_truc"),
         new TurnData("ui_text_6", "pattern_wave_circle"),
-        new TurnData("ui_text_6", "pattern_bullet_rush_2"),
+        new TurnData("ui_text_7", "pattern_bullet_rush_2"),
+        new TurnData("ui_text_8", "pattern_dimension_carry"),
         new TurnData("ui_text_1", "random")
     };
 
